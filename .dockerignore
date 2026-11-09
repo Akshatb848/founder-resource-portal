@@ -1,0 +1,6 @@
+.git
+**/__pycache__
+**/.env
+content/uploads
+docs
+tests

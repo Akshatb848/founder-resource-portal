@@ -1,0 +1,92 @@
+/* Company profile (alpha v1.2.6), shared by the founder portal and the workspace. Uses the portal's colours. */
+.cp{display:grid;gap:14px;min-width:0;max-width:100%}
+.cp>*,.cp-grid>*,#companyProfileHost,.co-profile{min-width:0}
+.cp input,.cp select{font-weight:400}
+.cp h3{margin:0 0 10px;font-size:15px}
+.cp h4{margin:10px 0 6px;font-size:13px}
+.cp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.cp-names h2{margin:0;font-size:24px;letter-spacing:-.02em}
+.cp-legal{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.cp-meta{margin:10px 0 0;display:flex;gap:6px;flex-wrap:wrap}
+.cp-actions{display:flex;gap:8px;flex-wrap:wrap}
+.cp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.cp-row{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
+.cp-row:first-of-type{border-top:0}
+.cp-row>span:first-child{color:var(--muted);font-weight:600}
+.cp-badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:#f1f3f5;color:#59636e}
+.cp-badge.ok{background:#e6f7ef;color:#167252}
+.cp-badge.amber{background:#fff1dc;color:#8a5300}
+.cp-badge.red{background:#fde8e4;color:#a8261a}
+.cp-alerts{display:flex;flex-wrap:wrap;gap:8px}
+.cp-alert{font-size:13px;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid}
+.cp-alert.red{background:#fde8e4;color:#a8261a;border-color:#f3b8ad}
+.cp-alert.amber{background:#fff4e0;color:#8a5300;border-color:#f0cf95}
+.cp-table{width:100%;border-collapse:collapse;font-size:13px}
+.cp-table th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--line)}
+.cp-table td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.cp-table .num{text-align:right;white-space:nowrap}
+.cp-table tr.cp-red td:first-child{box-shadow:inset 3px 0 0 #cf3b25}
+.cp-table tr.cp-amber td:first-child{box-shadow:inset 3px 0 0 #b97811}
+.cp .table-wrap{overflow-x:auto}
+.cp-edit-table input,.cp-edit-table select{width:100%;min-width:110px;padding:7px 8px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.cp-edit-table input[type="date"]{min-width:140px}
+.cp-list-row{display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.cp-list-row input{flex:1 1 200px;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:8px}
+.cp-remove{min-height:36px}
+.cp-form .review-form{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.cp-form .review-form label{display:grid;gap:.35rem;font-size:12px;font-weight:700}
+.cp-form .review-form .full{grid-column:1/-1}
+.cp-form .review-form input,.cp-form .review-form select{width:100%;font-size:14px;border:1px solid var(--line);border-radius:9px;padding:9px 11px;background:#fff;color:var(--ink)}
+.cp-form .review-form input:disabled{background:var(--bg);color:var(--muted)}
+.cp-history ul{margin:8px 0 0;padding-left:18px;font-size:13px}
+.cp-history li{margin-bottom:8px}
+.cp-history li ul{margin-top:4px;color:var(--muted)}
+.cp-missing p{margin:8px 0 0;font-size:13px}
+.cp-workspace-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cp-gaps td .cp-badge{margin-right:4px}
+@media (max-width:640px){.cp-form .review-form{grid-template-columns:1fr}.cp-names h2{font-size:20px}.cp-row{grid-template-columns:1fr;gap:2px}.cp-grid{grid-template-columns:1fr}}
+/* Spacing and phone layout (3 Nov 2026) */
+.cp>.card{padding:20px 22px}
+.cp h3{margin:0 0 14px;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cp-row{grid-template-columns:minmax(150px,44%) 1fr;gap:16px;padding:10px 0;line-height:1.45}
+.cp-table{font-size:13.5px}
+.cp-table th{padding:10px 14px;white-space:nowrap;vertical-align:bottom}
+.cp-table td{padding:11px 14px;line-height:1.45}
+.cp-table td.num,.cp-table th.num{padding-right:22px}
+.cp-table .cp-badge{margin-left:6px}
+.cp-edit-table{min-width:980px}
+.cp-edit-table td{padding:8px 8px;vertical-align:middle}
+.cp-edit-table td.cp-cell-title{min-width:190px;font-weight:600}
+.cp-edit-table select{min-width:156px}
+.cp-edit-table input[name="note"]{min-width:180px}
+.cp-edit-table .cp-cell-action{width:1%;white-space:nowrap}
+.cp .btn{white-space:nowrap}
+.cp .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px;padding:0 4px}
+.cp>.card>.btn,.cp>section>.btn{margin-top:12px}
+.cp-form .review-form{gap:14px 18px}
+.cp-form .review-form label{gap:6px}
+.cp-form h4{margin:14px 0 8px}
+.cp-list-row{gap:10px;margin-bottom:8px}
+.cp-tracker p.muted{margin:0 0 12px;font-size:13px;line-height:1.5}
+.cp-tracker textarea{width:100%;font:inherit;font-size:14px;border:1px solid var(--line);border-radius:9px;padding:9px 11px;resize:vertical}
+/* Phones: every table row becomes a small labelled card, so no word is broken across lines */
+@media (max-width:760px){
+  .cp>.card{padding:16px}
+  .cp-head .cp-actions{width:100%}.cp-head .cp-actions .btn{flex:1 1 auto;justify-content:center}
+  .cp-table,.cp-edit-table{min-width:0}
+  .cp-table thead{display:none}
+  .cp-table,.cp-table tbody,.cp-table tr,.cp-table td{display:block;width:100%}
+  .cp-table tr{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:10px;background:#fff}
+  .cp-table tr.cp-red{border-left:4px solid #cf3b25}.cp-table tr.cp-amber{border-left:4px solid #b97811}
+  .cp-table tr td:first-child,.cp-table tr.cp-red td:first-child,.cp-table tr.cp-amber td:first-child{box-shadow:none}
+  .cp-table td{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:6px 0;border:0;text-align:left!important}
+  .cp-table td::before{content:attr(data-label);flex:0 0 100px;font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--muted)}
+  .cp-table td:empty{display:none}
+  .cp-table td.cp-cell-title{display:block;font-weight:700;font-size:14px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:4px}
+  .cp-table td.cp-cell-title::before{display:none}
+  .cp-table td.cp-cell-action{display:block;padding-top:8px}.cp-table td.cp-cell-action::before{display:none}
+  .cp-edit-table td{flex-direction:column;align-items:stretch;gap:4px}
+  .cp-edit-table td::before{flex:none}
+  .cp-edit-table input,.cp-edit-table select{min-width:0!important;width:100%}
+  .cp .table-wrap{overflow:visible;margin:0;padding:0}
+}

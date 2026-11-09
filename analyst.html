@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Ventures workspace</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="phase1.css?v=23" />
+  <link rel="stylesheet" href="company-profile.css?v=1" />
+  <link rel="stylesheet" href="chat.css?v=1" />
+  <style>
+    body { background: var(--bg); }
+    /* Same shell as the founder portal (styles.css: .app, .sidebar, .nav, header, .content) */
+    #signinNote { max-width: 520px; margin: 3rem auto; }
+    /* sidebar scrolling: see styles.css (".sidebar>nav") */
+    .nav b:empty { display: none; }
+    .profile .ws-logout { grid-column: 1 / -1; width: 100%; min-height: 36px; margin-top: 4px; border: 1px solid rgba(255,255,255,.35); border-radius: 8px; background: transparent; color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; }
+    .profile .ws-logout:hover, .profile .ws-logout:focus-visible { background: rgba(255,255,255,.14); outline: none; }
+    .profile span#wsRoles { white-space: normal; line-height: 1.35; }
+    #signOutTop { white-space: nowrap; }
+    @media (max-width: 760px) { #journeyBtn, #founderLink { display: none; } #signOutTop { padding: 0 10px; font-size: 12px; } }
+    .queue-row { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 1.25rem; align-items: start; margin-bottom: .9rem; }
+    .queue-row h3 { margin: .35rem 0; font-size: 15px; }
+    .queue-row p { margin: .25rem 0; font-size: 13px; color: var(--muted); white-space: pre-wrap; }
+    .queue-controls { display: grid; gap: .45rem; }
+    .queue-controls label { font-size: 11px; font-weight: 700; color: var(--muted); }
+    .queue-controls select, .queue-controls input, .review-form input, .review-form select, .review-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 9px; padding: 9px 11px; background: #fff; color: var(--ink); }
+    .counts { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .review-actions { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .6rem; }
+    .review-actions .btn { min-height: 34px; font-size: 12px; }
+    .review-form { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+    .review-form label { display: grid; gap: .35rem; font-size: 12px; font-weight: 700; }
+    .review-form .full { grid-column: 1 / -1; }
+    .answers { display: grid; grid-template-columns: 170px 1fr; gap: .35rem .9rem; font-size: 13px; margin-top: .6rem; }
+    .answers dt { color: var(--muted); }
+    .answers dd { margin: 0; }
+    .empty { padding: 1.5rem; text-align: center; color: var(--muted); }
+    #toast { z-index: 50; }
+    .stat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-bottom: 1rem; }
+    .stat { display: grid; gap: .2rem; }
+    .stat strong { font-size: 24px; font-variant-numeric: tabular-nums; }
+    .stat span { font-size: 12px; color: var(--muted); }
+    .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem; }
+    .data { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .data th, .data td { text-align: left; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .data th { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    .data td.num { font-variant-numeric: tabular-nums; }
+    .scroll { overflow-x: auto; }
+    .company { display: grid; gap: .9rem; margin-bottom: 1rem; }
+    .company-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: baseline; }
+    .company-head h3 { margin: 0; font-size: 18px; }
+    .sub-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+    .sub-grid > div { border: 1px solid var(--line); border-radius: 10px; padding: .8rem; display: grid; gap: .5rem; align-content: start; min-width: 0; }
+    .sub-grid h4 { margin: 0; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+    .inline-form { display: grid; gap: .5rem; }
+    .inline-form label { display: grid; gap: .3rem; }
+    .inline-form input, .inline-form select, .inline-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; background: #fff; color: var(--ink); font: inherit; font-size: 13px; }
+    .inline-form .btn, .row-actions .btn { min-height: 32px; font-size: 12px; padding: 0 10px; }
+    .row-actions { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+    .person { display: flex; justify-content: space-between; gap: .5rem; align-items: center; flex-wrap: wrap; padding: .45rem 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .person small { display: block; color: var(--muted); }
+    .pill { font-size: 10px; font-weight: 800; padding: 3px 7px; border-radius: 999px; background: var(--bg); color: var(--muted); white-space: nowrap; }
+    .pill.on { background: #e6f7ef; color: #167252; }
+    .pill.off { background: #f1f3f5; color: #59636e; }
+    .pill.warn { background: #fff4e0; color: #8a5300; }
+    .news-status { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .news-status small { display: block; margin-top: .2rem; }
+    .news-status select { border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; background: #fff; }
+    .subtabs { display: flex; gap: .4rem; flex-wrap: wrap; margin: 0 0 1rem; }
+    .subtab { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 6px 13px; font-size: 13px; font-weight: 700; color: var(--muted); cursor: pointer; }
+    .subtab.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .subtab:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+    .news-sugg .company-head small { display: block; }
+    .edit-panel { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: .9rem; }
+    .handover { margin-top: .8rem; border-top: 1px solid var(--line); padding-top: .7rem; }
+    .handover > summary { cursor: pointer; color: var(--red); }
+    .kw-row { display: grid; grid-template-columns: minmax(180px, 1fr) 1.4fr auto; gap: .75rem; align-items: center; padding: .8rem 0; border-top: 1px solid var(--line); }
+    .kw-row input { width: 100%; border: 1px solid var(--line); border-radius: 9px; padding: 9px 11px; }
+    @media (max-width: 760px) { .kw-row { grid-template-columns: 1fr; } }
+    .secret { border-color: var(--red); background: var(--red-soft); display: grid; gap: .5rem; margin-bottom: 1rem; }
+    .secret code { font-size: 16px; font-weight: 700; padding: 4px 8px; background: #fff; border-radius: 6px; user-select: all; }
+    .audit-row { display: grid; grid-template-columns: 140px 190px minmax(0, 1fr); gap: .75rem; font-size: 12.5px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+    .audit-row code { overflow-wrap: anywhere; }
+    details.card > summary { cursor: pointer; }
+    @media (max-width: 900px) { .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sub-grid, .two-col { grid-template-columns: minmax(0, 1fr); } .audit-row { grid-template-columns: 1fr; gap: .1rem; } }
+    @media (max-width: 760px) { .queue-row, .review-form { grid-template-columns: 1fr; } .answers { grid-template-columns: 1fr; } }
+    .stat-link { cursor: pointer; transition: border-color .15s; }
+    .stat-link:hover, .stat-link:focus-visible { border-color: var(--red); outline: none; }
+    .approval-row { display: flex; justify-content: space-between; gap: 1rem; align-items: center; margin-bottom: .75rem; }
+    .approval-row h3 { margin: .4rem 0 .2rem; font-size: 16px; }
+    .act-list { display: grid; gap: 0; }
+    .act-item { display: grid; gap: .1rem; padding: .55rem 0 .55rem .9rem; border-left: 2px solid var(--line); font-size: 13px; }
+    .act-item small { color: var(--muted); }
+    .profile-head { display: flex; gap: .9rem; align-items: center; margin-bottom: .8rem; }
+    .avatar.big { width: 56px; height: 56px; font-size: 19px; display: grid; place-items: center; border-radius: 50%; background: var(--red); color: #fff; font-weight: 800; }
+    @media (max-width: 700px) { .approval-row { flex-direction: column; align-items: stretch; } }
+    .inline-ask-form { display: grid; gap: .45rem; padding: .8rem; margin: .4rem 0 .8rem; border: 1px solid var(--line); border-left: 3px solid var(--red); border-radius: 10px; background: #fff; }
+    .inline-ask-form label { font-size: 12px; font-weight: 700; }
+    .inline-ask-form input, .inline-ask-form textarea { width: 100%; }
+    tr.inline-ask td { background: var(--soft, #fafbfc); }
+    .org-top { padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 10px; background: var(--red-soft); }
+    .org-branches { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: .8rem; margin-top: .8rem; }
+    .org-branch { border: 1px solid var(--line); border-radius: 10px; padding: .6rem .8rem; min-width: 0; }
+    .org-label { margin-bottom: .2rem; }
+    .org-reports { margin-left: .9rem; padding-left: .8rem; border-left: 2px solid var(--line); }
+    .reports-pick select { margin-left: .3rem; }
+    .approval-body { margin: .4rem 0 .2rem; font-size: 13px; max-width: 70ch; white-space: pre-line; }
+    .thread { margin-top: .6rem; }
+    .thread-list { display: grid; gap: .45rem; margin-bottom: .6rem; }
+    .msg { max-width: 85%; padding: .5rem .7rem; border-radius: 10px; border: 1px solid var(--line); background: #fff; }
+    .msg.ours { justify-self: end; background: var(--red-soft); border-color: #f1c7bd; }
+    .msg small { display: block; color: var(--muted); font-size: 11px; }
+    .msg p { margin: .2rem 0 0; white-space: pre-line; font-size: 13px; }
+    .thread-form { display: grid; gap: .4rem; } .thread-form label { font-size: 12px; font-weight: 700; } .thread-form textarea { width: 100%; }
+    .notes-block { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--line); }
+    .group-toggle { all: unset; cursor: pointer; display: flex; justify-content: space-between; width: 100%; font: inherit; letter-spacing: inherit; }
+    .group-toggle span { transition: transform .15s; } .group-toggle[aria-expanded="true"] span { transform: rotate(180deg); }
+    .group-toggle:focus-visible, .ws-me:focus-visible { outline: 2px solid #fff; outline-offset: 2px; border-radius: 6px; }
+    #tabBar.fs-closed .fs-item { display: none; }
+    .ws-me { display: flex; gap: .6rem; align-items: center; cursor: pointer; min-width: 0; border-radius: 10px; }
+    .ws-me:hover { background: rgba(255,255,255,.12); }
+  </style>
+</head>
+<body>
+  <p class="card muted" id="signinNote">Checking your sign-in… If nothing happens, <a href="/">sign in here</a>.</p>
+
+  <div id="workspace" class="app hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-logo"><span class="yn-logo wordmark" aria-label="Demo Ventures (fictional)">Demo&nbsp;Ventures</span></span><span>Demo Ventures workspace</span><b>TEAM ONLY</b></div>
+      <nav id="tabBar" aria-label="Workspace navigation">
+        <p data-group>MAIN</p>
+        <button class="nav hidden" type="button" data-tab="overview"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5v8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 19.5z"/><path d="M9 21v-7h6v7"/></svg><span>Overview</span></button>
+        <button class="nav hidden" type="button" data-tab="approvals"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span>Approvals</span><b id="approvalCount"></b></button>
+        <button class="nav hidden" type="button" data-tab="companies"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><span>Companies &amp; founders</span></button>
+        <p data-group><button type="button" class="group-toggle" id="fsToggle" aria-expanded="false" aria-controls="tabBar">FOUNDER SUPPORT <span aria-hidden="true">▾</span></button></p>
+        <button class="nav hidden fs-item" type="button" data-tab="queue"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg><span>Founder requests</span><b id="queueCount"></b></button>
+        <button class="nav hidden fs-item" type="button" data-tab="intakes"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg><span>Questionnaire answers</span></button>
+        <button class="nav hidden fs-item" type="button" data-tab="activity"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Activity</span></button>
+        <p data-group>CONTENT</p>
+        <button class="nav hidden" type="button" data-tab="content"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2"/></svg><span>Resources</span><b id="reviewCount"></b></button>
+        <button class="nav hidden" type="button" data-tab="updates"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5"/></svg><span>Sector updates</span></button>
+        <button class="nav hidden" type="button" data-tab="events"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Events</span></button>
+        <button class="nav hidden" type="button" data-tab="messages"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Messages</span></button>
+        <button class="nav hidden" type="button" data-tab="course"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h7a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H2z"/><path d="M22 6h-7a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h8z"/></svg><span>Playbook</span></button>
+        <p data-group>NETWORK</p>
+        <button class="nav hidden" type="button" data-tab="connect"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Connect</span></button>
+        <button class="nav hidden" type="button" data-tab="hiring"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 12v3"/></svg><span>Hiring</span></button>
+        <p data-group>ADMINISTRATION</p>
+        <button class="nav hidden" type="button" data-tab="team"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Team &amp; access</span></button>
+        <button class="nav hidden" type="button" data-tab="audit"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Audit trail</span></button>
+      </nav>
+      <div class="profile">
+        <div class="ws-me" id="wsProfile" role="button" tabindex="0" title="Open my profile"><div class="avatar" id="wsAvatar">YN</div><div><strong id="wsName"></strong><span id="wsRoles"></span></div></div>
+        <button id="logoutBtn" class="ws-logout" type="button">Sign out</button>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div><button id="menu" class="icon-btn mobile" type="button" aria-label="Open navigation">☰</button><span class="breadcrumb">Demo Ventures workspace /</span><strong id="pageTitle">Overview</strong></div>
+        <div class="header-actions">
+          <button class="btn ghost" type="button" id="journeyBtn" title="Replay the guided walkthrough">User journey</button>
+          <button class="btn ghost" type="button" id="founderLink">Preview founder portal</button>
+
+        </div>
+      </header>
+      <div class="content">
+        <div id="secretPanel" class="card secret hidden" role="alert"></div>
+        <section id="tab-overview" class="hidden"></section>
+        <section id="tab-approvals" class="hidden"></section>
+        <section id="tab-companies" class="hidden"></section>
+        <section id="tab-queue" class="hidden"></section>
+        <section id="tab-intakes" class="hidden"></section>
+        <section id="tab-activity" class="hidden"></section>
+        <section id="tab-content" class="hidden"></section>
+        <section id="tab-updates" class="hidden"></section>
+        <section id="tab-events" class="hidden"></section>
+        <section id="tab-messages" class="hidden"></section>
+        <section id="tab-course" class="hidden"></section>
+        <section id="tab-connect" class="hidden"></section>
+        <section id="tab-hiring" class="hidden"></section>
+        <section id="tab-team" class="hidden"></section>
+        <section id="tab-audit" class="hidden"></section>
+        <section id="tab-profile" class="hidden"></section>
+      </div>
+    </main>
+  </div>
+  <div id="scrim" class="scrim"></div>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="api-integration.js?v=10"></script>
+  <script src="user-journey.js?v=4"></script>
+  <script src="company-profile.js?v=1"></script>
+  <script src="chat.js?v=1"></script>
+  <script src="workspace.js?v=11"></script>
+</body>
+</html>

@@ -1,0 +1,1093 @@
+{
+ "source": "Fictional demo directory for the public copy; every organisation and person is invented.",
+ "connects": [
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Harbor Peak Ventures",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "SaaS",
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/harbor-peak-ventures"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Saffron Ridge Capital",
+   "role_title": "Venture capital",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Consumer",
+    "Health"
+   ],
+   "website": "https://example.com/demo-fund/saffron-ridge-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Bluefinch Partners",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Early stage",
+   "cheque": "",
+   "skills": [
+    "Climate",
+    "Mobility"
+   ],
+   "website": "https://example.com/demo-fund/bluefinch-partners"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Lantern Seed Fund",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "B2B software"
+   ],
+   "website": "https://example.com/demo-fund/lantern-seed-fund"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Copperleaf Micro VC",
+   "role_title": "Micro VC",
+   "organization": "Hyderabad, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed",
+   "cheque": "",
+   "skills": [
+    "AgriTech",
+    "Rural"
+   ],
+   "website": "https://example.com/demo-fund/copperleaf-micro-vc"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Deep Tech VCs",
+   "display_name": "Quanta Forge Ventures",
+   "role_title": "Deep-tech venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series B",
+   "cheque": "",
+   "skills": [
+    "Robotics",
+    "Semiconductors"
+   ],
+   "website": "https://example.com/demo-fund/quanta-forge-ventures"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Deep Tech VCs",
+   "display_name": "Helix Frontier Fund",
+   "role_title": "Deep-tech venture capital",
+   "organization": "Chennai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A",
+   "cheque": "",
+   "skills": [
+    "Space",
+    "Materials"
+   ],
+   "website": "https://example.com/demo-fund/helix-frontier-fund"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Corporate VCs",
+   "display_name": "Northwind Corporate Ventures",
+   "role_title": "Corporate venture capital",
+   "organization": "Singapore",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Logistics",
+    "Retail"
+   ],
+   "website": "https://example.com/demo-fund/northwind-corporate-ventures"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Corporate VCs",
+   "display_name": "Meridian Auto Ventures",
+   "role_title": "Corporate venture capital",
+   "organization": "Germany",
+   "about": "Fictional demo entry.",
+   "stage": "Growth",
+   "cheque": "",
+   "skills": [
+    "Mobility",
+    "Energy"
+   ],
+   "website": "https://example.com/demo-fund/meridian-auto-ventures"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Debt Funds",
+   "display_name": "Granite Venture Debt",
+   "role_title": "Venture debt and credit",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Revenue-based finance"
+   ],
+   "website": "https://example.com/demo-fund/granite-venture-debt"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Secondary Funds",
+   "display_name": "Second Harbor Secondaries",
+   "role_title": "Secondary fund",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Late stage",
+   "cheque": "",
+   "skills": [
+    "Secondaries"
+   ],
+   "website": "https://example.com/demo-fund/second-harbor-secondaries"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "International Investors",
+   "display_name": "Atlas Bridge Capital",
+   "role_title": "International investor",
+   "organization": "United Kingdom",
+   "about": "Fictional demo entry.",
+   "stage": "Series A, Series B",
+   "cheque": "",
+   "skills": [
+    "Cross-border SaaS"
+   ],
+   "website": "https://example.com/demo-fund/atlas-bridge-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Investment Bankers",
+   "display_name": "Keystone Advisory Partners",
+   "role_title": "Investment banker",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Growth",
+   "cheque": "",
+   "skills": [
+    "Fundraising mandates"
+   ],
+   "website": "https://example.com/demo-fund/keystone-advisory-partners"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "M&A Advisors",
+   "display_name": "Crescent M&A Advisors",
+   "role_title": "M&A advisor",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Growth",
+   "cheque": "",
+   "skills": [
+    "Strategic sales"
+   ],
+   "website": "https://example.com/demo-fund/crescent-manda-advisors"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Exit & Corp Dev Network",
+   "display_name": "Summit Corp Dev Circle",
+   "role_title": "Exit and corporate development network",
+   "organization": "India",
+   "about": "Fictional demo entry.",
+   "stage": "Late stage",
+   "cheque": "",
+   "skills": [
+    "Acquisitions"
+   ],
+   "website": "https://example.com/demo-fund/summit-corp-dev-circle"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Amberline Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/amberline-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Brightwater Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/brightwater-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Cobalt Reef Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/cobalt-reef-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Driftwood Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/driftwood-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Emberfield Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/emberfield-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Foxglove Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/foxglove-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Glasshouse Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/glasshouse-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Hollowbrook Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/hollowbrook-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Ironleaf Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/ironleaf-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Juniper Arc Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/juniper-arc-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Kestrel Bay Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/kestrel-bay-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Lumen Crest Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/lumen-crest-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Mossgate Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/mossgate-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Nightjar Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/nightjar-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Opaline Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/opaline-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Pinecrest Hollow Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/pinecrest-hollow-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Quartzline Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/quartzline-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Rivermint Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/rivermint-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Sablewood Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/sablewood-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Tamarind Gate Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/tamarind-gate-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Umberfall Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/umberfall-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Velvet Isle Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/velvet-isle-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Willowmere Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/willowmere-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Xanthe Ridge Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/xanthe-ridge-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Yarrowfield Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/yarrowfield-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Zinnia Peak Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/zinnia-peak-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Ashgrove Lane Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/ashgrove-lane-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Bramblecourt Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/bramblecourt-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Cindervale Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/cindervale-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Dunemist Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/dunemist-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Eastwick Fen Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/eastwick-fen-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Fernhollow Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/fernhollow-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Goldcrest Moor Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/goldcrest-moor-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Hazelpond Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/hazelpond-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Inkberry Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/inkberry-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Jadebrook Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/jadebrook-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Kindlewood Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Bengaluru, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "SaaS"
+   ],
+   "website": "https://example.com/demo-fund/kindlewood-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Larkspur Vale Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Mumbai, India",
+   "about": "Fictional demo entry.",
+   "stage": "Seed to Series A",
+   "cheque": "",
+   "skills": [
+    "Consumer"
+   ],
+   "website": "https://example.com/demo-fund/larkspur-vale-fictional-seed"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Venture Capital",
+   "display_name": "Marigold Quay Fictional Capital",
+   "role_title": "Venture capital",
+   "organization": "Delhi NCR, India",
+   "about": "Fictional demo entry.",
+   "stage": "Series A onward",
+   "cheque": "",
+   "skills": [
+    "Climate"
+   ],
+   "website": "https://example.com/demo-fund/marigold-quay-fictional-capital"
+  },
+  {
+   "network_group": "Investor & Fundraising Ecosystem",
+   "subcategory": "Micro VCs",
+   "display_name": "Nettlecombe Fictional Seed",
+   "role_title": "Micro VC",
+   "organization": "Pune, India",
+   "about": "Fictional demo entry.",
+   "stage": "Pre-seed, Seed",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": "https://example.com/demo-fund/nettlecombe-fictional-seed"
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Technology & Cloud",
+   "display_name": "Cloudnest Credits Program",
+   "role_title": "Cloud credits and architecture reviews",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Due Diligence",
+   "display_name": "Clearview Diligence LLP",
+   "role_title": "Financial and legal due diligence",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Hiring & Executive Search",
+   "display_name": "Talentbridge Search",
+   "role_title": "Executive search",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Brand & Communications",
+   "display_name": "Storyline PR Studio",
+   "role_title": "Public relations",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Legal & IP",
+   "display_name": "Example Legal Associates",
+   "role_title": "Legal counsel",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Audit, Tax & Advisory",
+   "display_name": "Ledgerline Tax Advisors",
+   "role_title": "Tax administration",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "Insurance",
+   "display_name": "Safeharbor Insurance Brokers",
+   "role_title": "Insurance",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Operational Support Network",
+   "subcategory": "People & Culture",
+   "display_name": "Teamcraft OD",
+   "role_title": "Organisation design and culture",
+   "organization": "Demo operational partner",
+   "about": "Fictional demo entry.",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "EV",
+   "display_name": "Riya Sharma (Nimbus Mobility)",
+   "role_title": "Founder, Nimbus Mobility",
+   "organization": "Bengaluru",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "EV / Mobility"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "FinTech",
+   "display_name": "Kabir Mehta (Ledgerly Fintech)",
+   "role_title": "Founder, Ledgerly Fintech",
+   "organization": "Mumbai",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "FinTech"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "Retail SaaS",
+   "display_name": "Ishaan Gupta (Kirana Cloud)",
+   "role_title": "Founder, Kirana Cloud",
+   "organization": "Gurugram",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "Retail SaaS"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "HealthTech",
+   "display_name": "Meher Kapoor (Orbit Health)",
+   "role_title": "Founder, Orbit Health",
+   "organization": "Pune",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "HealthTech / AI"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "HealthTech",
+   "display_name": "Aditya Rao (Orbit Health)",
+   "role_title": "Founder, Orbit Health",
+   "organization": "Pune",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "HealthTech / AI"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "AgriTech",
+   "display_name": "Nikhil Bose (Greenrow Agritech)",
+   "role_title": "Founder, Greenrow Agritech",
+   "organization": "Jaipur",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "AgriTech / AI"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "SaaS",
+   "display_name": "Pooja Iyer (Ringly)",
+   "role_title": "Founder, Ringly",
+   "organization": "Hyderabad",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "SaaS / Telecom"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "EdTech",
+   "display_name": "Ira Banerjee (Quillstack)",
+   "role_title": "Founder, Quillstack",
+   "organization": "Bengaluru",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "EdTech"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "Climate",
+   "display_name": "Samar Chauhan (Voltara Grid)",
+   "role_title": "Founder, Voltara Grid",
+   "organization": "Ahmedabad",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "Climate / Energy"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "DeepTech",
+   "display_name": "Naina Ghosh (Pebble Robotics)",
+   "role_title": "Founder, Pebble Robotics",
+   "organization": "Bengaluru",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "DeepTech / Robotics"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Peer Founder Network",
+   "subcategory": "DeepTech",
+   "display_name": "Yash Bhat (Pebble Robotics)",
+   "role_title": "Founder, Pebble Robotics",
+   "organization": "Bengaluru",
+   "about": "Fictional demo founder.",
+   "stage": "",
+   "cheque": "",
+   "skills": [
+    "DeepTech / Robotics"
+   ],
+   "website": ""
+  },
+  {
+   "network_group": "Demo Ventures Network",
+   "subcategory": "Advisory panel",
+   "display_name": "Dr. Lakshmi Narayan (demo)",
+   "role_title": "Former operating partner; scaling go-to-market",
+   "organization": "Demo Ventures (fictional)",
+   "about": "Fund advisor",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Demo Ventures Network",
+   "subcategory": "Advisory panel",
+   "display_name": "Arvind Desai (demo)",
+   "role_title": "Angel investor; B2B software",
+   "organization": "Demo Ventures (fictional)",
+   "about": "Fund advisor",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Demo Ventures Network",
+   "subcategory": "Mentors",
+   "display_name": "Kiran Mathur (demo)",
+   "role_title": "Head of people at a growth-stage company",
+   "organization": "Demo Ventures (fictional)",
+   "about": "Mentor",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Demo Ventures Network",
+   "subcategory": "Mentors",
+   "display_name": "Farah Qureshi (demo)",
+   "role_title": "Manufacturing and supply-chain leader",
+   "organization": "Demo Ventures (fictional)",
+   "about": "Mentor",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  },
+  {
+   "network_group": "Demo Ventures Network",
+   "subcategory": "Fund team",
+   "display_name": "Dev Malhotra",
+   "role_title": "Partner, Demo Ventures (fictional)",
+   "organization": "Demo Ventures (fictional)",
+   "about": "Portfolio guidance and partner-level support",
+   "stage": "",
+   "cheque": "",
+   "skills": [],
+   "website": ""
+  }
+ ]
+}

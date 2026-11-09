@@ -1,0 +1,32 @@
+# Local demo: PostgreSQL 16 + the portal, with fictional seed data.
+#   docker compose up --build      then open http://127.0.0.1:8000
+# The password below is a throw-away local value for a database that only listens inside the compose network.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: founder_portal_local
+      POSTGRES_USER: fp_local
+      POSTGRES_PASSWORD: change-me
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fp_local -d founder_portal_local"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PG_HOST: db
+      PG_PORT: "5432"
+      PG_DB: founder_portal_local
+      PG_USER: fp_local
+      PG_PASSWORD: change-me
+      APP_ENV: local
+      PORTAL_SAMPLES: "1"        # sample events, briefs and a candidate profile for the demo
+      NEWS_FETCH_ENABLED: "0"    # no outbound feed reading
+      EMAIL_DISABLED: "1"        # messages stay in the workspace outbox
+    ports:
+      - "127.0.0.1:8000:8000"

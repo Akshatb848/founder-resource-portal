@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demo Ventures Founder's Resource Portal - personalised resources, sector intelligence, warm connections and structured support for portfolio founders." />
+  <meta name="theme-color" content="#cf3b25" />
+  <title>Demo Ventures Founder's Resource Portal</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='14' width='64' height='64' fill='%23cf3b25'/%3E%3Cpath d='M14 17h8l10 14 10-14h8L36 37v11h-8V37z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=723a9b4c" />
+  <link rel="stylesheet" href="phase1.css?v=32b9295d" />
+  <link rel="stylesheet" href="company-profile.css?v=2ed3122c" />
+  <link rel="stylesheet" href="chat.css?v=2cc07b61" />
+  <script src="boot.js?v=415b9613"></script>
+</head>
+<body>
+  <div id="login" class="login-shell">
+    <div class="login-brand">
+      <span class="eyebrow">DEMO VENTURES (FICTIONAL)</span>
+      <h1>Built for<br><em>founders.</em></h1>
+      <p>Templates, sector news and introductions picked for your company, with the Demo Ventures team a message away.</p>
+      <ul class="login-facts" aria-label="What you get">
+        <li><strong>Resources</strong><span>Templates and guides for your stage</span></li>
+        <li><strong>Connect</strong><span>Investors, advisors and service partners</span></li>
+        <li><strong>Support</strong><span>Your Demo Ventures team, on every request</span></li>
+      </ul>
+    </div>
+    <form id="loginForm" class="login-card">
+      <div class="login-logo">
+        <span class="yn-logo wordmark" aria-label="Demo Ventures (fictional)">Demo&nbsp;Ventures</span>
+      </div>
+      <h2>Founder's Resource Portal</h2>
+      <p>Sign in to your company's workspace.</p>
+      <!-- Other sign-in methods first (partner review, 4 Nov 2026): Google (placeholder) and a one-time code by email
+           (OTP_SIGNIN_ENABLED, off by default). Both explain "coming soon" until switched on (app-api-onboard.js). -->
+      <div class="login-alt">
+        <button class="btn google-sso wide" type="button" data-google-sso>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+          Sign in with Google
+        </button>
+        <button class="btn google-sso otp-btn" type="button" data-otp-signin>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email me a code
+        </button>
+      </div>
+      <div class="login-divider" aria-hidden="true"><span>or use your password</span></div>
+      <label>Email address<input id="email" type="email" autocomplete="username" required></label>
+      <label>Password<input type="password" autocomplete="current-password" required></label>
+      <button class="btn primary wide" type="submit">Sign in <span>→</span></button>
+      <p id="loginError" class="login-error" role="alert" hidden></p>
+    </form>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-logo"><span class="yn-logo wordmark" aria-label="Demo Ventures (fictional)">Demo&nbsp;Ventures</span></span><span>Founder's Resource Portal</span></div>
+      <nav id="nav" aria-label="Portal navigation">
+        <p>MAIN</p>
+        <button data-page="dashboard" class="nav active"><i data-icon="home"></i><span>Dashboard</span></button>
+        <button data-page="resources" class="nav"><i data-icon="library"></i><span>Resource Library</span></button>
+        <button data-page="updates" class="nav"><i data-icon="news"></i><span>Sector Updates</span><b id="updateBadge"></b></button>
+        <button data-page="company" class="nav"><i data-icon="file"></i><span>Company profile</span><b id="companyBadge"></b></button>
+        <p>NETWORK</p>
+        <button data-page="connect" class="nav"><i data-icon="users"></i><span>Connect</span></button>
+        <button data-page="hiring" class="nav"><i data-icon="briefcase"></i><span>Hiring</span><b id="hiringBadge"></b></button>
+        <button data-page="messages" class="nav"><i data-icon="chat"></i><span>Messages</span><b id="messagesBadge"></b></button>
+        <button data-page="requests" class="nav"><i data-icon="send"></i><span>Demo Ventures support</span><b id="requestBadge"></b></button>
+        <p>GUIDANCE</p>
+        <button data-page="playbooks" class="nav"><i data-icon="map"></i><span>Playbook</span></button>
+        <button data-page="events" class="nav"><i data-icon="calendar"></i><span>Events</span></button>
+        <p class="rbac-admin hidden">MANAGEMENT</p>
+        <button data-page="admin" class="nav rbac-admin hidden"><i data-icon="shield"></i><span>Demo Ventures workspace</span></button>
+      </nav>
+      <div class="profile">
+        <div class="avatar"></div><div><strong></strong><span></span></div>
+        <button id="logout" type="button" title="Sign out">Sign out</button>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div><button id="menu" class="icon-btn mobile" aria-label="Open navigation">☰</button><span class="breadcrumb">Founder's Resource Portal /</span><strong id="pageTitle">Dashboard</strong></div>
+        <div class="header-actions">
+          <div class="search"><i data-icon="search"></i><input id="globalSearch" aria-label="Search portal" placeholder="Search resources, updates, events, people"><kbd id="searchKey">Ctrl K</kbd></div>
+          <button id="tourBtn" class="btn ghost" title="Replay the guided walkthrough">User journey</button>
+          <button id="notifyBtn" class="icon-btn notification" aria-label="Open notifications"><i data-icon="bell"></i><span></span></button>
+          <button class="btn primary" data-action="new-request">+ Ask Demo Ventures</button>
+        </div>
+      </header>
+      <div id="content" class="content"></div>
+    </main>
+
+    <aside id="notificationPanel" class="drawer" aria-label="Notifications">
+      <div class="drawer-head"><div><span class="eyebrow">UPDATES FOR YOU</span><h2>Notifications</h2></div><button class="icon-btn" data-action="close-drawer">×</button></div>
+      <div class="drawer-footer"><button class="btn ghost wide" data-action="mark-read">Mark all as read</button></div>
+    </aside>
+    <div id="scrim" class="scrim"></div>
+    <div id="modal" class="modal-wrap hidden" role="dialog" aria-modal="true"></div>
+    <div id="toast" class="toast" role="status"></div>
+  </div>
+  <script src="api-integration.js?v=c497557d"></script>
+  <script src="app-api-onboard.js?v=37932acb"></script>
+  <script src="user-journey.js?v=39b531ee"></script>
+  <script src="app.js?v=031cfc7c"></script>
+  <script src="app-api-wiring.js?v=c2f483bd"></script>
+  <script src="phase1-features.js?v=4c8bd7ba"></script>
+  <script src="app-api-engagement.js?v=abe77b5e"></script>
+  <script src="app-api-alpha.js?v=2c5e06cb"></script>
+  <script src="app-api-talent.js?v=07dc7182"></script>
+  <script src="app-api-course.js?v=eeebb243"></script>
+  <script src="chat.js?v=e39d6be9"></script>
+  <script src="company-profile.js?v=6586f391"></script>
+  <script src="app-api-company.js?v=d7d09f84"></script>
+  <script src="app-api-messages.js?v=8e7e44e6"></script>
+</body>
+</html>

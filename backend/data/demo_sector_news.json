@@ -1,0 +1,102 @@
+{
+ "researched": "2026-10-27",
+ "note": "Fictional briefs for the public demo; the links are placeholders.",
+ "items": [
+  {
+   "companies": [
+    "Nimbus Mobility"
+   ],
+   "label": "POLICY",
+   "title": "State EV policy draft proposes swapping-station incentives",
+   "summary": "A (fictional) state draft policy offers capital subsidies for battery-swapping stations and asks for interoperability standards.",
+   "why": {
+    "Nimbus Mobility": "Could lower the cost of new swapping stations; worth a response in the consultation window."
+   },
+   "source": "Demo news wire (fictional)",
+   "source_url": "https://example.org/demo-news/1",
+   "published": "2026-10-20"
+  },
+  {
+   "companies": [
+    "Ledgerly Fintech"
+   ],
+   "label": "REGULATORY",
+   "title": "Central bank consults on digital lending disclosures",
+   "summary": "A (fictional) consultation paper proposes standard key-fact statements for embedded credit products.",
+   "why": {
+    "Ledgerly Fintech": "Supplier-credit flows may need a key-fact statement; review the onboarding screens."
+   },
+   "source": "Demo news wire (fictional)",
+   "source_url": "https://example.org/demo-news/2",
+   "published": "2026-10-21"
+  },
+  {
+   "companies": [
+    "Kirana Cloud",
+    "Ringly"
+   ],
+   "label": "MARKET",
+   "title": "Small retailers adopt digital billing faster in tier-2 cities",
+   "summary": "A (fictional) industry survey finds that digital billing adoption among small stores doubled in two years.",
+   "why": {
+    "Kirana Cloud": "Supports the tier-2 expansion plan in the board deck.",
+    "Ringly": "Small merchants going digital are a natural audience for business numbers."
+   },
+   "source": "Demo news wire (fictional)",
+   "source_url": "https://example.org/demo-news/3",
+   "published": "2026-10-22"
+  },
+  {
+   "companies": [
+    "Orbit Health"
+   ],
+   "label": "REGULATORY",
+   "title": "Medical device rules: registration window for monitoring devices",
+   "summary": "A (fictional) notice sets a registration deadline for low-risk patient-monitoring devices.",
+   "why": {
+    "Orbit Health": "Confirm the registration class of the ward monitor and plan the filing."
+   },
+   "source": "Demo news wire (fictional)",
+   "source_url": "https://example.org/demo-news/4",
+   "published": "2026-10-23"
+  },
+  {
+   "companies": [
+    "Greenrow Agritech"
+   ],
+   "label": "FUNDING",
+   "title": "Agri-data platforms attract a new round of climate funding",
+   "summary": "A (fictional) market note tracks investor interest in crop-intelligence and farm-data businesses.",
+   "why": {
+    "Greenrow Agritech": "Useful comparables for the next fundraising narrative."
+   },
+   "source": "Demo news wire (fictional)",
+   "source_url": "https://example.org/demo-news/5",
+   "published": "2026-10-24"
+  },
+  {
+   "companies": [
+    "Nimbus Mobility",
+    "Ledgerly Fintech",
+    "Kirana Cloud",
+    "Orbit Health",
+    "Greenrow Agritech",
+    "Ringly"
+   ],
+   "label": "TECHNOLOGY",
+   "title": "Public digital infrastructure adds new open APIs for small businesses",
+   "summary": "A (fictional) announcement describes open APIs for invoices, credit and logistics data.",
+   "why": {
+    "Nimbus Mobility": "Check whether the new APIs remove an integration you are building yourself.",
+    "Ledgerly Fintech": "Check whether the new APIs remove an integration you are building yourself.",
+    "Kirana Cloud": "Check whether the new APIs remove an integration you are building yourself.",
+    "Orbit Health": "Check whether the new APIs remove an integration you are building yourself.",
+    "Greenrow Agritech": "Check whether the new APIs remove an integration you are building yourself.",
+    "Ringly": "Check whether the new APIs remove an integration you are building yourself."
+   },
+   "source": "Demo news wire (fictional)",
+   "source_url": "https://example.org/demo-news/6",
+   "published": "2026-10-25"
+  }
+ ]
+}

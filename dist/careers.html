@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Opening · Demo Ventures portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=723a9b4c" />
+  <link rel="stylesheet" href="phase1.css?v=32b9295d" />
+  <link rel="stylesheet" href="careers.css?v=a9a2ea7e" />
+</head>
+<body class="careers">
+  <main class="careers-shell">
+    <header class="careers-head">
+      <span class="yn-logo wordmark" aria-label="Demo Ventures (fictional)">Demo&nbsp;Ventures</span>
+      <span class="eyebrow">DEMO VENTURES PORTFOLIO · OPENING</span>
+    </header>
+    <section id="opening" class="card careers-card" aria-live="polite"><p class="muted">Loading the opening…</p></section>
+    <section id="formCard" class="card careers-card hidden">
+      <h2>Interested? Share a few details</h2>
+      <p class="muted">The Demo Ventures team reads every response and introduces suitable people to the company's founders. Only the fields with * are needed.</p>
+      <form id="interestForm" class="review-form careers-form" novalidate>
+        <label>Full name *<input name="full_name" required minlength="2" maxlength="120" autocomplete="name"></label>
+        <label>Email *<input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+        <label>Phone<input name="phone" maxlength="30" autocomplete="tel" placeholder="+91 …"></label>
+        <label>Current role and organisation *<input name="headline" required minlength="3" maxlength="160" placeholder="e.g. Engineering Manager at …"></label>
+        <label>Years of experience<input name="experience_years" type="number" min="0" max="60"></label>
+        <label>City<input name="location" maxlength="120"></label>
+        <label class="full">LinkedIn or portfolio link<input name="profile_url" type="url" maxlength="300" placeholder="https://"></label>
+        <label class="full">Why this role (optional)<textarea name="note" maxlength="1200" rows="4"></textarea></label>
+        <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+        <label class="full check"><input type="checkbox" name="consent" required> I agree that Demo Ventures may share these details with this company's founders for this opening. *</label>
+        <div class="full review-actions"><button class="btn primary" type="submit">Send my interest</button></div>
+        <p id="formError" class="login-error full" role="alert" hidden></p>
+      </form>
+    </section>
+    <p class="careers-foot muted">Demo Ventures (fictional) · Your details are used only for this opening and are never published.</p>
+  </main>
+  <script src="careers.js?v=28bf1e47"></script>
+</body>
+</html>

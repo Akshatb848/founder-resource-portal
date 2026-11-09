@@ -1,0 +1,148 @@
+{
+ "source": "Fictional demo data written for the public portfolio copy. Every company and person is invented.",
+ "order": "Fund I, Fund II, Fund III, Fund IV",
+ "companies": [
+  {
+   "order": 1,
+   "name": "Nimbus Mobility",
+   "fund": "Fund II",
+   "sector": "EV / Mobility",
+   "city": "Bengaluru",
+   "invested": "May 2021",
+   "about": "Fictional demo company. Battery-swapping network for electric three-wheelers and last-mile fleets.",
+   "website": "",
+   "founders": [
+    "Riya Sharma"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 2,
+   "name": "Ledgerly Fintech",
+   "fund": "Fund III",
+   "sector": "FinTech",
+   "city": "Mumbai",
+   "invested": "June 2024",
+   "about": "Fictional demo company. Accounts-payable automation and supplier credit for mid-sized manufacturers.",
+   "website": "",
+   "founders": [
+    "Kabir Mehta"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 3,
+   "name": "Kirana Cloud",
+   "fund": "Fund III",
+   "sector": "Retail SaaS",
+   "city": "Gurugram",
+   "invested": "April 2022",
+   "about": "Fictional demo company. Inventory, billing and reordering app for neighbourhood grocery stores.",
+   "website": "",
+   "founders": [
+    "Ishaan Gupta"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 4,
+   "name": "Orbit Health",
+   "fund": "Fund II",
+   "sector": "HealthTech / AI",
+   "city": "Pune",
+   "invested": "July 2020",
+   "about": "Fictional demo company. Remote patient monitoring and early-warning alerts for hospital wards.",
+   "website": "",
+   "founders": [
+    "Meher Kapoor",
+    "Aditya Rao"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 5,
+   "name": "Greenrow Agritech",
+   "fund": "Fund III",
+   "sector": "AgriTech / AI",
+   "city": "Jaipur",
+   "invested": "January 2025",
+   "about": "Fictional demo company. Satellite and weather-based crop advisories for farmer producer organisations.",
+   "website": "",
+   "founders": [
+    "Nikhil Bose"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 6,
+   "name": "Ringly",
+   "fund": "Fund III",
+   "sector": "SaaS / Telecom",
+   "city": "Hyderabad",
+   "invested": "November 2024",
+   "about": "Fictional demo company. Cloud business phone numbers and call tracking for small businesses.",
+   "website": "",
+   "founders": [
+    "Pooja Iyer"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 7,
+   "name": "Tidewater Logistics",
+   "fund": "Fund I",
+   "sector": "Logistics",
+   "city": "Chennai",
+   "invested": "March 2016",
+   "about": "Fictional demo company. Freight-matching marketplace for coastal shipping.",
+   "website": "",
+   "founders": [
+    "Rohit Pillai"
+   ],
+   "status": "Exited"
+  },
+  {
+   "order": 8,
+   "name": "Quillstack",
+   "fund": "Fund II",
+   "sector": "EdTech",
+   "city": "Bengaluru",
+   "invested": "August 2019",
+   "about": "Fictional demo company. Writing-practice platform for school students.",
+   "website": "",
+   "founders": [
+    "Ira Banerjee"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 9,
+   "name": "Voltara Grid",
+   "fund": "Fund IV",
+   "sector": "Climate / Energy",
+   "city": "Ahmedabad",
+   "invested": "February 2026",
+   "about": "Fictional demo company. Software for scheduling rooftop-solar maintenance crews.",
+   "website": "",
+   "founders": [
+    "Samar Chauhan"
+   ],
+   "status": "Active"
+  },
+  {
+   "order": 10,
+   "name": "Pebble Robotics",
+   "fund": "Fund IV",
+   "sector": "DeepTech / Robotics",
+   "city": "Bengaluru",
+   "invested": "March 2026",
+   "about": "Fictional demo company. Low-cost robotic arms for small-batch electronics assembly.",
+   "website": "",
+   "founders": [
+    "Naina Ghosh",
+    "Yash Bhat"
+   ],
+   "status": "Active"
+  }
+ ]
+}

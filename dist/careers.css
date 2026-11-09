@@ -1,0 +1,21 @@
+/* Public interest page (careers.html) */
+body.careers{background:#f4f6f8;min-height:100vh;margin:0}
+.careers-shell{max-width:760px;margin:0 auto;padding:28px 16px 40px;display:grid;gap:16px}
+.careers-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.careers-head .yn-logo{display:block;width:auto}
+.careers-card h1{font-size:28px;letter-spacing:-.03em;margin:6px 0}
+.careers-card h2{margin-top:0}
+.careers-form{margin-top:12px}
+.careers-form .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.careers-foot{text-align:center;font-size:12px}
+@media(max-width:620px){.careers-card h1{font-size:23px}}
+.careers-form{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.careers-form label{display:grid;gap:6px;font-size:13px;font-weight:650;color:var(--ink)}
+.careers-form .full{grid-column:1/-1}
+.careers-form input,.careers-form textarea{width:100%;box-sizing:border-box;min-height:44px;border:1px solid var(--line);border-radius:9px;padding:10px 12px;font:inherit;font-weight:400;background:#fff}
+.careers-form textarea{min-height:110px;resize:vertical}
+.careers-form input:focus,.careers-form textarea:focus{outline:3px solid rgba(45,105,163,.25);border-color:#9bb8d6}
+.careers-form .check{display:flex;align-items:flex-start;gap:10px;font-weight:500;line-height:1.45}
+.careers-form .check input{width:18px;min-height:18px;height:18px;margin-top:2px;accent-color:var(--red);flex:none}
+.careers-form .review-actions{display:flex;gap:10px}
+@media(max-width:620px){.careers-form{grid-template-columns:1fr}}
